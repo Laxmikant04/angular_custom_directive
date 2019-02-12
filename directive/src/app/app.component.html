@@ -1,0 +1,11 @@
+
+ <!-- for scrolling using directive -->
+ pages {{currentPage}}
+ <ul id="infinite-scroller"
+  appInfiniteScroller
+  scrollPerecnt="70"
+  immediateCallback="true"
+  [scrollCallback]="scrollCallback"
+  >
+    <li *ngFor="let item of news">{{item.title}}</li>
+</ul>
